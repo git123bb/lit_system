@@ -19,7 +19,7 @@ jobs:
       - name: Run pipeline
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python main.py
+        run: python main2.py
       - name: Commit and push updated digest
         run: |
           git config user.name "github-actions"
