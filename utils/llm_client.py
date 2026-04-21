@@ -1,26 +1,26 @@
 import json
 from openai import OpenAI
-from anthropic import Anthropic
+# 移除顶层的 anthropic 导入，避免未安装时模块加载失败
 import config
 
 class LLMClient:
     def __init__(self):
         self.provider = config.LLM_PROVIDER
         if self.provider == "openai":
-            # 从 config 中读取千问的 base_url（如果没有则默认为 OpenAI 官方地址）
+            # 兼容千问的 OpenAI 接口
             base_url = getattr(config, "QWEN_BASE_URL", None)
             if base_url:
-                # 使用千问兼容地址
                 self.client = OpenAI(
                     api_key=config.OPENAI_API_KEY,
                     base_url=base_url
                 )
-                self.model = "qwen-plus"   # 可改为 qwen-turbo / qwen-max
+                self.model = "qwen-plus"
             else:
-                # 纯 OpenAI 官方
                 self.client = OpenAI(api_key=config.OPENAI_API_KEY)
                 self.model = "gpt-4o-mini"
         elif self.provider == "claude":
+            # 延迟导入 anthropic，仅当真正使用时才加载
+            from anthropic import Anthropic
             self.client = Anthropic(api_key=config.ANTHROPIC_API_KEY)
             self.model = "claude-3-haiku-20240307"
         else:
