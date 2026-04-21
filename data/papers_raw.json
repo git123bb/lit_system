@@ -1,0 +1,938 @@
+[
+  {
+    "arxiv_id": "2604.18583v1",
+    "title": "MUA: Mobile Ultra-detailed Animatable Avatars",
+    "authors": [
+      "Heming Zhu",
+      "Guoxing Sun",
+      "Marc Habermann"
+    ],
+    "abstract": "Building photorealistic, animatable full-body digital humans remains a longstanding challenge in computer graphics and vision. Recent advances in animatable avatar modeling have largely progressed along two directions: improving the fidelity of dynamic geometry and appearance, or reducing computational complexity to enable deployment on resource-constrained platforms, e.g., VR headsets. However, existing approaches fail to achieve both goals simultaneously: Ultra-high-fidelity avatars typically require substantial computation on server-class GPUs, whereas lightweight avatars often suffer from limited surface dynamics, reduced appearance details, and noticeable artifacts. To bridge this gap, we propose a novel animatable avatar representation, termed Wavelet-guided Multi-level Spatial Factorized Blendshapes, and a corresponding distillation pipeline that transfers motion-aware clothing dynamics and fine-grained appearance details from a pre-trained ultra-high-quality avatar model into a compact, efficient representation. By coupling multi-level wavelet spectral decomposition with low-rank structural factorization in texture space, our method achieves up to 2000X lower computational cost and a 10X smaller model size than the original high-quality teacher avatar model, while preserving visually plausible dynamics and appearance details closely resemble those of the teacher model. Extensive comparisons with state-of-the-art methods show that our approach significantly outperforms existing avatar approaches designed for mobile settings and achieves comparable or superior rendering quality to most approaches that can only run on servers. Importantly, our representation substantially improves the practicality of high-fidelity avatars for immersive applications, achieving over 180 FPS on a desktop PC and real-time native on-device performance at 24 FPS on a standalone Meta Quest 3.",
+    "published": "2026-04-20T17:59:43+00:00",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "pdf_url": "https://arxiv.org/pdf/2604.18583v1",
+    "comment": "Project page: https://vcai.mpi-inf.mpg.de/projects/MUA/"
+  },
+  {
+    "arxiv_id": "2604.18570v1",
+    "title": "A multimodal and temporal foundation model for virtual patient representations at healthcare system scale",
+    "authors": [
+      "Andrew Zhang",
+      "Tong Ding",
+      "Sophia J. Wagner",
+      "Caiwei Tian",
+      "Ming Y. Lu",
+      "Rowland Pettit",
+      "Joshua E. Lewis",
+      "Alexandre Misrahi",
+      "Dandan Mo",
+      "Long Phi Le",
+      "Faisal Mahmood"
+    ],
+    "abstract": "Modern medicine generates vast multimodal data across siloed systems, yet no existing model integrates the full breadth and temporal depth of the clinical record into a unified patient representation. We introduce Apollo, a multimodal temporal foundation model trained and evaluated on over three decades of longitudinal hospital records from a major US hospital system, composed of 25 billion records from 7.2 million patients, representing 28 distinct medical modalities and 12 major medical specialties. Apollo learns a unified representation space integrating over 100 thousand unique medical events in our clinical vocabulary as well as images and clinical text. This \"atlas of medical concepts\" forms a computational substrate for modeling entire patient care journeys comprised of sequences of structured and unstructured events, which are compressed by Apollo into virtual patient representations. To assess the potential of these whole-patient representations, we created 322 prognosis and retrieval tasks from a held-out test set of 1.4 million patients. We demonstrate the generalized clinical forecasting potential of Apollo embeddings, including predicting new disease onset risk up to five years in advance (95 tasks), disease progression (78 tasks), treatment response (59 tasks), risk of treatment-related adverse events (17 tasks), and hospital operations endpoints (12 tasks). Using feature attribution techniques, we show that model predictions align with clinically-interpretable multimodal biomarkers. We evaluate semantic similarity search on 61 retrieval tasks, and moreover demonstrate the potential of Apollo as a multimodal medical search engine using text and image queries. Together, these modeling capabilities establish the foundation for computable medicine, where the full context of patient care becomes accessible to computational reasoning.",
+    "published": "2026-04-20T17:55:47+00:00",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "https://arxiv.org/pdf/2604.18570v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18567v1",
+    "title": "Latent Phase-Shift Rollback: Inference-Time Error Correction via Residual Stream Monitoring and KV-Cache Steering",
+    "authors": [
+      "Manan Gupta",
+      "Dhruv Kumar"
+    ],
+    "abstract": "Large language models frequently commit unrecoverable reasoning errors mid-generation: once a wrong step is taken, subsequent tokens compound the mistake rather than correct it. We introduce $\\textbf{Latent Phase-Shift Rollback}$ (LPSR): at each generation step, we monitor the residual stream at a critical layer lcrit, detect abrupt directional reversals (phase shifts) via a cosine-similarity $+$ entropy dual gate, and respond by rolling back the KV-cache and injecting a pre-computed steering vector. No fine-tuning, gradient computation, or additional forward passes are required. LPSR achieves $\\mathbf{44.0\\%}$ on MATH-500 with an 8B model versus $28.8\\%$ for standard AR ($+15.2$ pp; McNemar $χ^2 = 66.96$, $p < 10^{-15}$). Critically, prompted self-correction, the most natural inference-time baseline, scores only $19.8\\%$, below standard AR; LPSR exceeds it by $+24.2$ pp ($χ^2 = 89.4$, $p \\approx 0$). LPSR also outperforms Best-of-16 ($+7.8$ pp) at $5.4\\times$ lower token cost, and surpasses a standard 70B model ($35.2\\%$) with $8.75\\times$ fewer parameters at ${\\sim}3\\times$ the token budget. A 32-layer sweep reveals a novel \\textbf{detection-correction dissociation}: error-detection AUC peaks at layer~14 ($0.718$) but task accuracy peaks at layer~16 ($44.0\\%$ vs.\\ $29.2\\%$), demonstrating that optimal monitoring depth differs for detection and correction.",
+    "published": "2026-04-20T17:53:33+00:00",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "https://arxiv.org/pdf/2604.18567v1",
+    "comment": "Under Review"
+  },
+  {
+    "arxiv_id": "2604.18551v1",
+    "title": "Non-linear Lie Conformal Algebras and One-Loop Corrections of self-dual Yang-Mills amplitudes",
+    "authors": [
+      "Charles Igel",
+      "Jeremy Mancinas",
+      "Juan Villarreal"
+    ],
+    "abstract": "This work is motivated by recent developments in celestial holography. In \\cite{CP}, the authors interpreted QCD collinear singularities in terms of operator product expansions in a two-dimensional CFT. We reformulate the algebraic structures arising in their work using the formalism of non-linear Lie conformal algebras developed in \\cite{SK}.",
+    "published": "2026-04-20T17:43:21+00:00",
+    "categories": [
+      "math.QA"
+    ],
+    "primary_category": "math.QA",
+    "pdf_url": "https://arxiv.org/pdf/2604.18551v1",
+    "comment": "13 Pages, 0 figures, submitted to Letters in Mathematical Physics"
+  },
+  {
+    "arxiv_id": "2604.18549v1",
+    "title": "Advancing Vision Transformer with Enhanced Spatial Priors",
+    "authors": [
+      "Qihang Fan",
+      "Huaibo Huang",
+      "Mingrui Chen",
+      "Hongmin Liu",
+      "Ran He"
+    ],
+    "abstract": "In recent years, the Vision Transformer (ViT) has garnered significant attention within the computer vision community. However, the core component of ViT, Self-Attention, lacks explicit spatial priors and suffers from quadratic computational complexity, limiting its applicability. To address these issues, we have proposed RMT, a robust vision backbone with explicit spatial priors for general purposes. RMT utilizes Manhattan distance decay to introduce spatial information and employs a horizontal and vertical decomposition attention method to model global information. Building on the strengths of RMT, Euclidean enhanced Vision Transformer (EVT) is an expanded version that incorporates several key improvements. Firstly, EVT uses a more reasonable Euclidean distance decay to enhance the modeling of spatial information, allowing for a more accurate representation of spatial relationships compared to the Manhattan distance used in RMT. Secondly, EVT abandons the decomposed attention mechanism featured in RMT and instead adopts a simpler spatially-independent grouping approach, providing the model with greater flexibility in controlling the number of tokens within each group. By addressing these modifications, EVT offers a more sophisticated and adaptable approach to incorporating spatial priors into the Self-Attention mechanism, thus overcoming some of the limitations associated with RMT and further enhancing its applicability in various computer vision tasks. Extensive experiments on Image Classification, Object Detection, Instance Segmentation, and Semantic Segmentation demonstrate that EVT exhibits exceptional performance. Without additional training data, EVT achieves 86.6% top1-acc on ImageNet-1k.",
+    "published": "2026-04-20T17:41:00+00:00",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "pdf_url": "https://arxiv.org/pdf/2604.18549v1",
+    "comment": "Accepted by TPAMI2026"
+  },
+  {
+    "arxiv_id": "2604.18546v1",
+    "title": "Wasserstein Distributionally Robust Risk-Sensitive Estimation via Conditional Value-at-Risk",
+    "authors": [
+      "Feras Al Taha",
+      "Eilyan Bitar"
+    ],
+    "abstract": "We propose a distributionally robust approach to risk-sensitive estimation of an unknown signal x from an observed signal y. The unknown signal and observation are modeled as random vectors whose joint probability distribution is unknown, but assumed to belong to a given type-2 Wasserstein ball of distributions, termed the ambiguity set. The performance of an estimator is measured according to the conditional value-at-risk (CVaR) of the squared estimation error. Within this framework, we study the problem of computing affine estimators that minimize the worst-case CVaR over all distributions in the given ambiguity set. As our main result, we show that, when the nominal distribution at the center of the Wasserstein ball is finitely supported, such estimators can be exactly computed by solving a tractable semidefinite program. We evaluate the proposed estimators on a wholesale electricity price forecasting task using real market data and show that they deliver lower out-of-sample CVaR of squared error compared to existing methods.",
+    "published": "2026-04-20T17:39:18+00:00",
+    "categories": [
+      "cs.LG",
+      "eess.SP",
+      "math.OC"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "https://arxiv.org/pdf/2604.18546v1",
+    "comment": "6 pages, 2 figures"
+  },
+  {
+    "arxiv_id": "2604.18542v1",
+    "title": "Dissipative Preparation of Correlated Quantum States in Dipolar Rydberg Arrays",
+    "authors": [
+      "Mingsheng Tian",
+      "Zhen Bi",
+      "Thomas Iadecola",
+      "Bryce Gadway"
+    ],
+    "abstract": "Preparing correlated quantum states is essential for emerging technologies, but remains challenging in many-body systems. Here we propose a dissipative protocol that engineers nonreciprocal, energy-selective transitions to steer dipolar quantum systems toward desired many-body states. This is realized by introducing two types of controllable dissipative auxiliary atoms that act as nonreciprocal excitation and de-excitation channels, respectively, enabling a directional walk in Hilbert space. This approach enables stabilization of states across the many-body spectrum, not limited to the ground state and requiring no \\textit{a priori} knowledge of the Hamiltonian. Our approach is designed for neutral atoms in dipolar Rydberg arrays, but applies broadly to setups with similar capabilities, providing a flexible and scalable framework for state preparation in programmable platforms.",
+    "published": "2026-04-20T17:36:47+00:00",
+    "categories": [
+      "quant-ph",
+      "cond-mat.quant-gas",
+      "physics.atom-ph"
+    ],
+    "primary_category": "quant-ph",
+    "pdf_url": "https://arxiv.org/pdf/2604.18542v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18538v1",
+    "title": "Fast and Forgettable: A Controlled Study of Novices' Performance, Learning, Workload, and Emotion in AI-Assisted and Human Pair Programming Paradigms",
+    "authors": [
+      "Nicholas Gardella",
+      "James Prather",
+      "Juho Leinonen",
+      "Paul Denny",
+      "Raymond Pettit",
+      "Sara L. Riggs"
+    ],
+    "abstract": "Code-generating Artificial Intelligence has gained popularity within both professional and educational programming settings over the past several years. While research and pedagogy are beginning to cope with this change, computing students are left to bear the unforeseen consequences of AI amidst a dearth of empirical evidence about its effects. Though pair programming between students is well studied and known to be beneficial to self-efficacy and academic achievement, it remains underutilized and further threatened by the proposition that AI can replace a human programming partner. In this paper, we present a controlled pair programming study with 22 participants who wrote Python code under time pressure in teams of two and individually with GitHub Copilot for 20 minutes each. They were incentivized by bonus compensation to balance performance with understanding and were retested individually on the programming tasks after a retention interval of one week. Subjective measures of workload and emotion as well as objective measures of performance and learning (retest performance) were collected. Results showed that participants performed significantly better with GitHub Copilot than their human teammate, and several dimensions of their workload were significantly reduced. However, the emotional effect of the human teammate was significantly more positive and arousing as compared to working with Copilot. Furthermore, there was a nonsignificant absolute retest performance reduction in the AI condition and a larger retest performance decrement in the AI condition. We recommend that educators strongly consider revisiting pair programming as an educational tool in addition to embracing modern AI.",
+    "published": "2026-04-20T17:33:13+00:00",
+    "categories": [
+      "cs.HC"
+    ],
+    "primary_category": "cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2604.18538v1",
+    "comment": "for online appendices, see https://doi.org/10.5281/zenodo.19665253"
+  },
+  {
+    "arxiv_id": "2604.18533v1",
+    "title": "Hamiltonian dynamics from pure dissipation",
+    "authors": [
+      "Zhong-Xia Shang",
+      "Daniel Stilck França"
+    ],
+    "abstract": "The fundamental difference between closed and open quantum dynamics lies in their environmental interaction: closed systems are perfectly isolated and evolve reversibly under unitary Hamiltonian dynamics, whereas open systems continuously couple to an external bath, resulting in irreversible dissipation and information loss. In this work, we show internal Hamiltonian dynamics can be \"faked`` via external pure dissipation, i.e., Lindbladians without a coherent Hamiltonian part. More concretely, we show that, in a GKSL representation with zero explicit Hamiltonian term but nontraceless jump operators, bounded-norm dissipative generators can approximate Hamiltonian dynamics within $ε$ error in diamond norm using $\\mathcal{O}(t^2/ε)$ evolution time. We further prove that for time-independent dynamics this $\\mathcal{O}(t^2/ε)$ scaling is in the worst case, necessary and optimal from a geometric perspective, which captures the fundamental decoherence cost for catching up with the speed of Hamiltonian dynamics. Our construction leads to various implications, including the BQP-completeness of purely dissipative dynamics even before reaching approximate equilibrium, a Zeno-adjacent state-independent freezing effect, the no super-quadratic fast-forwarding theorem of a class of purely dissipative dynamics, and reducing Lindbladian simulation cost via gauge changing.",
+    "published": "2026-04-20T17:28:28+00:00",
+    "categories": [
+      "quant-ph"
+    ],
+    "primary_category": "quant-ph",
+    "pdf_url": "https://arxiv.org/pdf/2604.18533v1",
+    "comment": "6+7 pages, 1 figure"
+  },
+  {
+    "arxiv_id": "2604.18531v1",
+    "title": "AtomTwin.jl: a physics-native digital twin framework for neutral-atom quantum processors",
+    "authors": [
+      "Shannon Whitlock"
+    ],
+    "abstract": "AtomTwin.jl is an open-source Julia package for developing and simulating quantum protocols, hardware configurations and building digital twins for neutral-atom quantum processors and related atomic quantum devices. AtomTwin operates between mathematical models and physical devices; modeling atoms, optical tweezers, laser fields, atomic motion, interactions, and noise processes natively from physical geometry and parameters, without requiring users to define Hamiltonians manually. The package provides hardware-level instruction sequences, high-performance solvers for coupled quantum and classical dynamics, and a ready-to-use model for ytterbium-171 atoms in an extensible framework designed to accommodate a greater variety of atomic species and hardware components in the future. This paper describes the software architecture, performance benchmarks against existing toolboxes, and a demonstrated end-to-end application: preparation of a logical Bell state in the $[[4,2,2]]$ error-detecting code with four $^{171}$Yb atoms in moveable tweezers.",
+    "published": "2026-04-20T17:26:46+00:00",
+    "categories": [
+      "quant-ph",
+      "physics.atom-ph"
+    ],
+    "primary_category": "quant-ph",
+    "pdf_url": "https://arxiv.org/pdf/2604.18531v1",
+    "comment": "Julia package: https://github.com/aQCess/AtomTwin.jl"
+  },
+  {
+    "arxiv_id": "2604.18529v1",
+    "title": "HybridGen: Efficient LLM Generative Inference via CPU-GPU Hybrid Computing",
+    "authors": [
+      "Mao Lin",
+      "Xi Wang",
+      "Guilherme Cox",
+      "Dong Li",
+      "Hyeran Jeon"
+    ],
+    "abstract": "As modern LLMs support thousands to millions of tokens, KV caches grow to hundreds of gigabytes, stressing memory capacity and bandwidth. Existing solutions, such as KV cache pruning and offloading, alleviate these but underutilize hardware by relying solely on either GPU or CPU for attention computing, and considering yet limited CPU local memory for KV cache storage. We propose HybridGen, an efficient hybrid attention framework for long-context LLM inference. HybridGen enables CPU-GPU collaborative attention on systems with expanded tiered memory (e.g., CXL memory), addressing three key challenges: (1) multi-dimensional attention dependencies, (2) intensifying CPU-GPU load imbalance with longer sequences, and (3) NUMA penalty of tiered memories. HybridGen tackles these by introducing attention logit parallelism, a feedback-driven scheduler, and semantic-aware KV cache mapping. Experiments with three LLM models with eleven different sizes on three GPU platforms with a CXL-expanded memory show that HybridGen outperforms six state-of-the-art KV cache management methods by 1.41x--3.2x on average while maintaining superior accuracy.",
+    "published": "2026-04-20T17:25:44+00:00",
+    "categories": [
+      "cs.PF",
+      "cs.DC"
+    ],
+    "primary_category": "cs.PF",
+    "pdf_url": "https://arxiv.org/pdf/2604.18529v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18527v1",
+    "title": "Fractional motions of an active particle on the quantum vortex",
+    "authors": [
+      "Yun Jeong Kang",
+      "Sung Kyu Seo",
+      "Kyungsik Kim"
+    ],
+    "abstract": "We analytically investigate the diffusive motion inferred from experimental observations of active particles driven by quantum vortices on the surface of superfluid helium. We first study the dynamical behavior of an active particle subject to a viscoelastic memory effect characterized by a power-law kernel. We then analyze the dynamics of an active particle under a uniform vortex force, thermal noise, and viscous dissipation subject to a power-law kernel. Next, by including a harmonic confining force, we obtain analytical solutions for the joint probability density in two distinct time regimes.",
+    "published": "2026-04-20T17:24:45+00:00",
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.quant-gas"
+    ],
+    "primary_category": "cond-mat.stat-mech",
+    "pdf_url": "https://arxiv.org/pdf/2604.18527v1",
+    "comment": "11 pages, 2 tables"
+  },
+  {
+    "arxiv_id": "2604.18517v1",
+    "title": "Low-noise Pauli-consistent ensemble Monte Carlo for graphene with electron-electron scattering",
+    "authors": [
+      "Tigran Zalinyan",
+      "Giovanni Nastasi"
+    ],
+    "abstract": "We investigate Pauli-consistent ensemble Monte Carlo simulations of graphene with explicit intraband electron-electron scattering. To reduce the cost of electron-electron proposal-rate evaluation, we introduce a sampled-partner approximation that replaces the full partner-cell sum by uniform sampling from the instantaneous ensemble, while leaving the event-level collision step unchanged. Comparison with the full-sum reference shows close agreement together with a substantial reduction in computational cost, enabling large-ensemble low-noise simulations. In this regime, systematic oscillatory components become clearly resolved in ensemble-averaged time traces. We show that these oscillations are numerical and originate from deterministic drift on the discretized momentum-space grid. We also discuss a procedure for reducing their impact in recorded observables without modifying the underlying Monte Carlo dynamics.",
+    "published": "2026-04-20T17:13:05+00:00",
+    "categories": [
+      "math-ph"
+    ],
+    "primary_category": "math-ph",
+    "pdf_url": "https://arxiv.org/pdf/2604.18517v1",
+    "comment": "15 pages, 12 figures, 7 tables, submitted manuscript (status: with referee(s))"
+  },
+  {
+    "arxiv_id": "2604.18513v1",
+    "title": "Bosonization, vertex operators and maximal violation of the Bell-CHSH inequality in wedge regions",
+    "authors": [
+      "J. G. A. Caribé",
+      "M. S. Guimaraes",
+      "I. Roditi",
+      "S. P. Sorella"
+    ],
+    "abstract": "It is pointed out that the vertex operators of a chiral boson in 1+1 dimensions provide an explicit realization of dichotomic, bounded, Hermitian operators that saturate the Tsirelson bound of the Bell-CHSH inequality in the vacuum state.",
+    "published": "2026-04-20T17:08:32+00:00",
+    "categories": [
+      "hep-th",
+      "math-ph",
+      "quant-ph"
+    ],
+    "primary_category": "hep-th",
+    "pdf_url": "https://arxiv.org/pdf/2604.18513v1",
+    "comment": "5 pages"
+  },
+  {
+    "arxiv_id": "2604.18511v1",
+    "title": "An adaptive discretization algorithm for locally optimal experimental design with constraints",
+    "authors": [
+      "Jochen Schmid",
+      "Philipp Seufert",
+      "Jan Schwientek",
+      "Tobias Seidel",
+      "Karl-Heinz Küfer"
+    ],
+    "abstract": "We develop a novel iterative algorithm for locally optimal experimental design under constraints, like budget or performance constraints. It is an adaptive discretization algorithm. In every iteration, a discretized version of the constrained-design problem is solved and then the discretization is adaptively refined by adding an approximate violator of a suitable sufficient $\\eps$-optimality condition for the current design. We prove that with $\\eps = 0$, our algorithm converges to an optimal design and that with $\\eps > 0$, our algorithm finitely terminates at an $\\eps$-optimal design. Compared to the existing algorithms on constrained experimental design, our algorithm comes with considerably less computational effort because the nonlinear subproblems in our algorithm have a smaller dimension and have to be solved only approximately and only in selected iterations (typically the last few). Additionally, our algorithm covers a considerably larger class of constraints. We demonstrate the good convergence properties of the algorithm on experimental design problems from chemical engineering that feature time and yield constraints.",
+    "published": "2026-04-20T17:05:08+00:00",
+    "categories": [
+      "math.OC"
+    ],
+    "primary_category": "math.OC",
+    "pdf_url": "https://arxiv.org/pdf/2604.18511v1",
+    "comment": "44 pages,"
+  },
+  {
+    "arxiv_id": "2604.18507v1",
+    "title": "Learning the Riccati solution operator for time-varying LQR via Deep Operator Networks",
+    "authors": [
+      "Jun Chen",
+      "Umberto Biccari",
+      "Junmin Wang"
+    ],
+    "abstract": "We propose a computational framework for replacing the repeated numerical solution of differential Riccati equations in finite-horizon Linear Quadratic Regulator (LQR) problems by a learned operator surrogate. Instead of solving a nonlinear matrix-valued differential equation for each new system instance, we construct offline an approximation of the associated solution operator mapping time-dependent system parameters to the Riccati trajectory. The resulting model enables fast online evaluation of approximate optimal feedbacks across a wide class of systems, thereby shifting the computational burden from repeated numerical integration to a one-time learning stage. From a theoretical perspective, we establish control-theoretic guarantees for this operator-based approximation. In particular, we derive bounds quantifying how operator approximation errors propagate to feedback performance, trajectory accuracy, and cost suboptimality, and we prove that exponential stability of the closed-loop system is preserved under sufficiently accurate operator approximation. These results provide a framework to assess the reliability of data-driven approximations in optimal control. On the computational side, we design tailored DeepONet architectures for matrix-valued, time-dependent problems and introduce a progressive learning strategy to address scalability with respect to the system dimension. Numerical experiments on both time-invariant and time-varying LQR problems demonstrate that the proposed approach achieves high accuracy and strong generalization across a wide range of system configurations, while delivering substantial computational speedups compared to classical solvers. The method offers an effective and scalable alternative for parametric and real-time optimal control applications.",
+    "published": "2026-04-20T16:56:34+00:00",
+    "categories": [
+      "math.OC",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "primary_category": "math.OC",
+    "pdf_url": "https://arxiv.org/pdf/2604.18507v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18506v1",
+    "title": "Physics-Informed Neural Networks for Maximizing Quantum Fisher Information in Time-Dependent Many-Body Systems",
+    "authors": [
+      "Antonio Ferrer-Sánchez",
+      "Yolanda Vives-Gilabert",
+      "Yue Ban",
+      "Xi Chen",
+      "José D. Martín-Guerrero"
+    ],
+    "abstract": "Quantum Fisher Information (QFI) sets the ultimate precision limit for parameter estimation and is therefore a central quantity in quantum metrology. In time-dependent many-body systems, however, maximizing QFI is a highly non-trivial task due to the combined effects of non-commutativity, control complexity, and the exponential growth of the Hilbert space. In this work, we present a physics-informed neural network (PINN) framework to address this problem through the learning of counter-diabatic quantum dynamics. Our approach combines a variational PINN formulation with a Magnus-expansion treatment of time-ordered evolution, enabling the adiabatic gauge potential and the scheduling function to be inferred directly from the underlying physics while enforcing the Euler-Lagrange structure of the protocol. The method is applied to several families of driven spin Hamiltonians, including nearest-neighbor, dipolar, and trapped-ion-inspired interactions, for systems of up to six qubits. The numerical results show that the proposed framework systematically improves over reference solutions based only on the Euler-Lagrange condition, yielding high normalized QFI together with favorable fidelity and extremal-balance metrics while preserving small phsical residuals. The analysis further shows that learning the scheduling function provides a clear performance advantage in most cases, and reveals non-trivial finite-size effects, with $q=3$ emerging as a particularly challenging regime. Although scalability remains limited by the exponential growth of the operator space and by automatic-differentiation costs, the results demonstrate that PINNs constitute a viable and physically grounded route for learning metrologically optimal control strategies in interacting quantum systems.",
+    "published": "2026-04-20T16:56:31+00:00",
+    "categories": [
+      "quant-ph",
+      "physics.comp-ph"
+    ],
+    "primary_category": "quant-ph",
+    "pdf_url": "https://arxiv.org/pdf/2604.18506v1",
+    "comment": "20 pages, 14 figures, 2 tables"
+  },
+  {
+    "arxiv_id": "2604.18505v1",
+    "title": "Bayesian experimental design: grouped geometric pooled posterior via ensemble Kalman methods",
+    "authors": [
+      "Huchen Yang",
+      "Xinghao Dong",
+      "Jinlong Wu"
+    ],
+    "abstract": "Bayesian experimental design (BED) for complex physical systems is often limited by the nested inference required to estimate the expected information gain (EIG) or its gradients. Each outer sample induces a different posterior, creating a large and heterogeneous set of inference targets. Existing methods have to sacrifice either accuracy or efficiency: they either perform per-outer-sample posterior inference, which yields higher fidelity but at prohibitive computational cost, or amortize the inner inference across all outer samples for computational reuse, at the risk of degraded accuracy under posterior heterogeneity. To improve accuracy and maintain cost at the amortized level, we propose a grouped geometric pooled posterior framework that partitions outer samples into groups and constructs a pooled proposal for each group. While such grouping strategy would normally require generating separate proposal samples for different groups, our tailored ensemble Kalman inversion (EKI) formulation generates these samples without extra forward-model evaluation cost. We also introduce a conservative diagnostic to assess importance-sampling quality to guide grouping. This grouping strategy improves within-group proposal-target alignment, yielding more accurate and stable estimators while keeping the cost comparable to amortized approaches. We evaluate the performance of our method on both Gaussian-linear and high-dimensional network-based model discrepancy calibration problems.",
+    "published": "2026-04-20T16:55:02+00:00",
+    "categories": [
+      "cs.IT",
+      "stat.ML"
+    ],
+    "primary_category": "cs.IT",
+    "pdf_url": "https://arxiv.org/pdf/2604.18505v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18500v1",
+    "title": "QRAFTI: An Agentic Framework for Empirical Research in Quantitative Finance",
+    "authors": [
+      "Terence Lim",
+      "Kumar Muthuraman",
+      "Michael Sury"
+    ],
+    "abstract": "We introduce a multi-agent framework intended to emulate parts of a quantitative research team and support equity factor research on large financial panel datasets. QRAFTI integrates a research toolkit for panel data with MCP servers that expose data access, factor construction, and custom coding operations as callable tools. It can help replicate established factors, formulate and test new signals, and generate standardized research reports accompanied by narrative analysis and computational traces. On multi-step empirical tasks, using chained tool calls and reflection-based planning may offer better performance and explainability than dynamic code generation alone.",
+    "published": "2026-04-20T16:52:22+00:00",
+    "categories": [
+      "cs.MA",
+      "q-fin.GN"
+    ],
+    "primary_category": "cs.MA",
+    "pdf_url": "https://arxiv.org/pdf/2604.18500v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18498v1",
+    "title": "A primality test for $Kp^\\ell - 1$ numbers",
+    "authors": [
+      "Anuj Jakhar",
+      "Mahesh Kumar Ram"
+    ],
+    "abstract": "We develop an algebraic framework over arbitrary quadratic fields $L = \\mathbb{Q}(\\sqrt{D})$ to generalize the Miller-Rabin primality test. Consequently, we present a deterministic primality test for integers of the form $N = c_D k p^{\\ell} - 1$ that requires only a single modular exponentiation and achieves a computational complexity of $\\tilde{\\mathcal{O}}(\\log^2 N)$. Furthermore, we also establish an analogue of Korselt's criterion within this setting. Finally, computational data generated using SageMath confirm its efficiency, successfully establishing the primality of numbers in the associated quadratic field within milliseconds.",
+    "published": "2026-04-20T16:49:07+00:00",
+    "categories": [
+      "math.NT"
+    ],
+    "primary_category": "math.NT",
+    "pdf_url": "https://arxiv.org/pdf/2604.18498v1",
+    "comment": "14 pages. Comments are welcome"
+  },
+  {
+    "arxiv_id": "2604.18497v1",
+    "title": "Missingness-Adaptive Factor Identification in High-Dimensional Data",
+    "authors": [
+      "Ping Zeng",
+      "Yicheng Zeng",
+      "Lixing Zhu"
+    ],
+    "abstract": "Determining the number of factors in high-dimensional factor models remains a fundamental challenge, particularly when data are incomplete. This paper introduces the concept of identifiable factors, those that can be reliably recovered despite missing observations, and proposes the Missingness-Adaptive Thresholding Estimator (MATE). To our knowledge, MATE is the first missingness-adaptive framework for factor number determination that accommodates both homogeneous and heterogeneous missingness without imposing restrictive assumptions on factor strength. Notably, it operates without data imputation, circumventing the computational burden associated with most existing approaches. We establish a rigorous theoretical foundation for MATE, proving its consistency under a range of structural conditions. Extensive simulations and real-world applications demonstrate that MATE consistently outperforms state-of-the-art methods, exhibiting superior robustness in settings with high missingness rates and weak factor signals.",
+    "published": "2026-04-20T16:48:39+00:00",
+    "categories": [
+      "stat.ME"
+    ],
+    "primary_category": "stat.ME",
+    "pdf_url": "https://arxiv.org/pdf/2604.18497v1",
+    "comment": "46 pages, 4 figures, 14 tables"
+  },
+  {
+    "arxiv_id": "2604.18496v1",
+    "title": "Tensor Processing with Homodyne Photonic Integrated Circuits exceeds 1,000 TOPS",
+    "authors": [
+      "Lian Zhou",
+      "Kaiwen Xue",
+      "Yun-Jhu Lee",
+      "Chun-Ho Lee",
+      "Yuan Li",
+      "Kiwon Kwon",
+      "Weipeng Zhang",
+      "Songlin Zhao",
+      "Jason Moraes",
+      "Niranjan Bhatia",
+      "Ryan Hamerly",
+      "Mengjie Yu",
+      "Zaijun Chen"
+    ],
+    "abstract": "High-performance computing underpins modern artificial intelligence (AI), enabling foundation models, real-time inference and perception in autonomous systems, and data-intensive scientific simulations. Recent advances in quantization techniques utilizing low-precision computation without degrading model accuracy, creates new opportunities for analog photonic computing characterized by ultra-high clock rates and low energy consumption. Here we propose and demonstrate a coherent homodyne integrated circuit capable of general matrix multiplication(GEMM) with aggregate throughput that exceeds 1,000 TOPS (tera-operations per second), enabled by massive on-chip optical fanout and parallelism. By leveraging time multiplexing, the required modulator count is reduced from O($N^2$) to O(N), allowing dense integration of record-scale 256 $\\times$ 256 homodyne units (each <0.0064 $mm^2$) within a single reticle. We employ wafer-scale fabricated 64 thin-film lithium niobate (TFLN) transmitters (each over 40-GHz bandwidth with propagation loss of 0.2 dB/cm) to encode data and chip-to-chip coupled to Si/SiN computing circuits (64 channels). Our system achieves up to 7-bit computational accuracy across 8 $\\times$ 8 parallel channels at record computing clockrate 120 Gbaud/s, and 6-bit statistical accuracy across 256 $\\times$ 100 channels at 20-128 Gbaud/s, representing a total throughput of 1,000-6,000 TOPS. Massive parallelism amortizes the optoelectronic (OE) conversion to allow 330-TOPS/W efficiency using foundry-available packaging technology. The system throughput is benchmarked with Qwen2.5-0.5 billion parameter models that generate accurate tokens. High throughput and energy efficiency establish a near-term pathway toward light-based accelerators for large-scale training and low-latency inference from datacenters to edges, accelerating new models toward artificial general intelligence.",
+    "published": "2026-04-20T16:44:56+00:00",
+    "categories": [
+      "cs.ET"
+    ],
+    "primary_category": "cs.ET",
+    "pdf_url": "https://arxiv.org/pdf/2604.18496v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18495v1",
+    "title": "Scaling of Quantum Resources for Simulating a Long-Range System",
+    "authors": [
+      "Tanya Keshari",
+      "Debasis Sadhukhan"
+    ],
+    "abstract": "We simulate a long-range extended Ising model in one dimension using a hybrid quantum algorithm, namely Variational Quantum Eigensolver (VQE). In this quantum simulation, we investigate how quantum resources scale with system size and interaction strength. Three structure-aware ansatze incorporating nearest-neighbor (NN), next-nearest-neighbor (NNN), and next-next-nearest-neighbor (NNNN) entangling blocks are constructed by mimicking the string operators in the Hamiltonian. We show that energy fidelity alone is not a good indicator for finding the ground state of our model. To overcome this problem, we introduce an additional criterion based on pairwise logarithmic negativity as a more reliable way to find the actual ground state by the VQE. We find that the interaction range parameter alpha primarily governs the minimum number of ansatz layers required, rather than proximity to the quantum critical point. In particular, we show that in the non-local regime (alpha <= 1), the NNN and NNNN ansatze reduce the layer scaling rate by factors of 2.5x and 3.8x relative to NN in all phases, including the critical point. The total number of two-qubit gates required for reliable simulation grows quadratically with system size for all three ansatze. This is consistent with the theoretical prediction, as the number of non-local terms in the Hamiltonian also grows quadratically with the system size. In the local regime, however, the number of required two-qubit gates grows linearly with system size. In contrast, in the quasi-local regime, the required number of two-qubit gates for the quantum simulation is more subtle and depends on the phase of the Hamiltonian.",
+    "published": "2026-04-20T16:44:52+00:00",
+    "categories": [
+      "quant-ph"
+    ],
+    "primary_category": "quant-ph",
+    "pdf_url": "https://arxiv.org/pdf/2604.18495v1",
+    "comment": "11 pages, 5 figures"
+  },
+  {
+    "arxiv_id": "2604.18491v1",
+    "title": "Faster by Design: Interactive Aerodynamics via Neural Surrogates Trained on Expert-Validated CFD",
+    "authors": [
+      "Nicholas Thumiger",
+      "Andrea Bartezzaghi",
+      "Mattia Rigotti",
+      "Cezary Skura",
+      "Thomas Frick",
+      "Elisa Serioli",
+      "Fabrizio Arbucci",
+      "A. Cristiano I. Malossi"
+    ],
+    "abstract": "Computational Fluid Dynamics (CFD) is central to race-car aerodynamic development, yet its cost -- tens of thousands of core-hours per high-fidelity evaluation -- severely limits the design space exploration feasible within realistic budgets. AI-based surrogate models promise to alleviate this bottleneck, but progress has been constrained by the limited complexity of public datasets, which are dominated by smoothed passenger-car shapes that fail to exercise surrogates on the thin, complex, highly loaded components governing motorsport performance. This work presents three primary contributions. First, we introduce a high-fidelity RANS dataset built on a parametric LMP2-class CAD model and spanning six operating conditions (map points) covering straight-line and cornering regimes, generated and validated by aerodynamics experts at Dallara to preserve features relevant to industrial motorsport. Second, we present the Gauge-Invariant Spectral Transformer (GIST), a graph-based neural operator whose spectral embeddings encode mesh connectivity to enhance predictions on tightly packed, complex geometries. GIST guarantees discretization invariance and scales linearly with mesh size, achieving state-of-the-art accuracy on both public benchmarks and the proposed race-car dataset. Third, we demonstrate that GIST achieves a level of predictive accuracy suitable for early-stage aerodynamic design, providing a first validation of the concept of interactive design-space exploration -- where engineers query a surrogate in place of the CFD solver -- within industrial motorsport workflows.",
+    "published": "2026-04-20T16:42:35+00:00",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "https://arxiv.org/pdf/2604.18491v1",
+    "comment": "7 pages, 4 figures"
+  },
+  {
+    "arxiv_id": "2604.18481v1",
+    "title": "Physics-Informed Neural Networks: A Didactic Derivation of the Complete Training Cycle",
+    "authors": [
+      "Abdeladhim Tahimi"
+    ],
+    "abstract": "This paper is a step-by-step, self-contained guide to the complete training cycle of a Physics-Informed Neural Network (PINN) -- a topic that existing tutorials and guides typically delegate to automatic differentiation libraries without exposing the underlying algebra. Using a first-order initial value problem with a known analytical solution as a running example, we walk through every stage of the process: forward propagation of both the network output and its temporal derivative, evaluation of a composite loss function built from the ODE residual and the initial condition, backpropagation of gradients -- with particular attention to the product rule that arises in hidden layers -- and a gradient descent parameter update. Every calculation is presented with explicit, verifiable numerical values using a 1-3-3-1 multilayer perceptron with two hidden layers and 22 trainable parameters. From these concrete examples, we derive general recursive formulas -- expressed as sensitivity propagation relations -- that extend the gradient computation to networks of arbitrary depth, and we connect these formulas to the automatic differentiation engines used in practice. The trained network is then validated against the exact solution, achieving a relative $L^2$ error of $4.290 \\times 10^{-4}$ using only the physics-informed loss, without any data from the true solution. A companion Jupyter/PyTorch notebook reproduces every manual calculation and the full training pipeline, providing mutual validation between hand-derived and machine-computed gradients.",
+    "published": "2026-04-20T16:34:47+00:00",
+    "categories": [
+      "math.NA",
+      "cs.LG"
+    ],
+    "primary_category": "math.NA",
+    "pdf_url": "https://arxiv.org/pdf/2604.18481v1",
+    "comment": "22 pages, 5 figures, companion code at https://github.com/Tahimi/PINN-Didactic-Training-Cycle"
+  },
+  {
+    "arxiv_id": "2604.18480v1",
+    "title": "`New' examples of skew fields not finitely generated as algebras",
+    "authors": [
+      "K. R. Goodearl",
+      "E. S. Letzter"
+    ],
+    "abstract": "An associative division algebra D is said to be _affine_ over a central subfield k if D is finitely generated as a k-algebra. In 1956 Amitsur famously proved that, when k is uncountable, D cannot be k-affine unless D is algebraic over k. In this paper we consider affineness -- and nonaffineness -- for certain naturally occurring classes of division algebras over arbitrary fields. The primary applications are to division algebras of fractions of suitably conditioned iterated skew polynomial rings over k, including many examples naturally arising in Lie theoretic and quantum group settings. Many transcendental division algebras are thus verified to be nonaffine over k. Division algebras of fractions of Weyl algebras and quantum affine spaces are determined to be affine over their centers exactly when they are finite dimensional over their centers.",
+    "published": "2026-04-20T16:34:47+00:00",
+    "categories": [
+      "math.RA"
+    ],
+    "primary_category": "math.RA",
+    "pdf_url": "https://arxiv.org/pdf/2604.18480v1",
+    "comment": "9 pages"
+  },
+  {
+    "arxiv_id": "2604.18479v1",
+    "title": "Warm-Start Quantum Approximate Optimization Algorithm for QAM MIMO Data Detection",
+    "authors": [
+      "Soumyadip Paul",
+      "Sourav Banerjee",
+      "Debanjan Bhowmik",
+      "Neel Kanth Kundu"
+    ],
+    "abstract": "Data detection in large-scale multiple-input multiple-output (MIMO) systems with higher-order quadrature amplitude modulation (QAM) remains a challenging problem due to the exponential complexity of the classical maximum likelihood (ML) detector. This challenge is further amplified by Gray-coded modulation, which introduces nonlinear symbol-to-bit mappings and transforms the problem into a higher-order unconstrained binary optimization (HUBO) formulation. To address this problem, this paper presents a hybrid quantum-classical detection framework that leverages a warm-start linear-ramp Quantum Approximate Optimization Algorithm (WSLR-QAOA) for solving the resulting HUBO problem. A structured warm-start based on a low-rank semidefinite relaxation, solved via a block coordinate descent (BCD) method, provides an efficient and high-quality initialization, while a linear ramp parameterization guides the QAOA optimization. Simulation results show that the proposed framework outperforms classical methods in terms of symbol error rate (SER) and converges faster than standard QAOA, while achieving performance close to the optimal ML detector. Furthermore, the WSLR-QAOA algorithm is validated on actual IBM quantum hardware, where it achieves near-ML performance at low SNR and maintains competitive accuracy at higher SNR despite moderate degradation due to hardware noise. This demonstrates the practical potential of the HUBO-based WSLR-QAOA algorithm for large-scale MIMO data detection.",
+    "published": "2026-04-20T16:32:04+00:00",
+    "categories": [
+      "eess.SP"
+    ],
+    "primary_category": "eess.SP",
+    "pdf_url": "https://arxiv.org/pdf/2604.18479v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18477v1",
+    "title": "Multi-Scale Reversible Chaos Game Representation: A Unified Framework for Sequence Classification",
+    "authors": [
+      "Sarwan Ali",
+      "Taslim Murad"
+    ],
+    "abstract": "Biological classification with interpretability remains a challenging task. For this, we introduce a novel encoding framework, Multi-Scale Reversible Chaos Game Representation (MS-RCGR), that transforms biological sequences into multi-resolution geometric representations with guaranteed reversibility. Unlike traditional sequence encoding methods, MS-RCGR employs rational arithmetic and hierarchical k-mer decomposition to generate scale-invariant features that preserve complete sequence information while enabling diverse analytical approaches. Our framework bridges three distinct paradigms for sequence analysis: (1) traditional machine learning using extracted geometric features, (2) computer vision models operating on CGR-generated images, and (3) hybrid approaches combining protein language model embeddings with CGR features. Through comprehensive experiments on synthetic DNA and protein datasets encompassing seven distinct sequence classes, we demonstrate that MS-RCGR features consistently enhance classification performance across all paradigms. Notably, our hybrid approach combining pre-trained language model embeddings (ESM2, ProtT5) with MS-RCGR features achieves superior performance compared to either method alone. The reversibility property of our encoding ensures no information loss during transformation, while multi-scale analysis captures patterns ranging from individual nucleotides to complex motif structures. Our results indicate that MS-RCGR provides a flexible, interpretable, and high-performing foundation for biological sequence analysis.",
+    "published": "2026-04-20T16:28:28+00:00",
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "https://arxiv.org/pdf/2604.18477v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18475v1",
+    "title": "On the Independence Number of the Prime-Coprime Graph of a Finite Group",
+    "authors": [
+      "Ravi Ranjan",
+      "Shubh Narayan Singh",
+      "Surbhi Kumari",
+      "Shidra Jamil"
+    ],
+    "abstract": "The prime-coprime graph $Θ(G)$ of a finite group $G$ is the simple graph with vertex set $G$, where two distinct elements are adjacent whenever the greatest common divisor of their orders is either $1$ or a prime. We characterize all finite groups $G$ for which $Θ(G)$ is a split graph. We establish a general lower bound for the independence number of $Θ(G)$ of an arbitrary finite group $G$. Moreover, we explicitly compute the independence number of $Θ(G)$ for several distinguished families of finite groups, including cyclic, dihedral, dicyclic, and semidihedral groups.",
+    "published": "2026-04-20T16:25:54+00:00",
+    "categories": [
+      "math.GR"
+    ],
+    "primary_category": "math.GR",
+    "pdf_url": "https://arxiv.org/pdf/2604.18475v1",
+    "comment": "12 pages, 3 figures"
+  },
+  {
+    "arxiv_id": "2604.18474v1",
+    "title": "New bounds for the area of MOTS and generalized ultra-massive spacetimes",
+    "authors": [
+      "José M. M. Senovilla"
+    ],
+    "abstract": "Bounds for the area of general closed marginally trapped surfaces (MTS) are presented. They do not require any kind of stability, and are determined by a constant that depends on a particular component of the Einstein tensor on the surface and another constant that rules the (in)stability of the MTS. When stability is added, the area bounds are enlarged. Such area bounds are realized in spacetimes that exhibit interesting generic properties. Concretely, they possess marginally trapped tubes foliated by marginally trapped topological spheres containing a distinguished round sphere $\\bar S$ with constant Gaussian curvature that realizes the area bound. This prominent surface separates two distinct portions of the marginally trapped tubes: a dynamical horizon and a timelike membrane. The particular case where there is a positive cosmological constant leads to the well-known universal bound $4π/ Λ$ for spatially stable MTS, and to the recently introduced `ultra-massive spacetimes'. These spacetimes are more extreme than black holes, as there is no notion of event horizon and the entire external region is just collapsing with no possible escape. In this paper similar behaviours are found for non-positive $Λ$ if the energy-momentum content is powerful enough. The results may have implications on binary mergers and on accreting very compact objects.",
+    "published": "2026-04-20T16:25:20+00:00",
+    "categories": [
+      "gr-qc",
+      "hep-th",
+      "math-ph"
+    ],
+    "primary_category": "gr-qc",
+    "pdf_url": "https://arxiv.org/pdf/2604.18474v1",
+    "comment": "14 pages, no figures"
+  },
+  {
+    "arxiv_id": "2604.18465v1",
+    "title": "On the quasi-monomiality of the $α$-and $δ$-invariants",
+    "authors": [
+      "Donghyeon Kim"
+    ],
+    "abstract": "In this paper, we show that for any projective klt pair $(X,Δ)$ and ample line bundle $L$, there exist quasi-monomial valuations computing $α(X,Δ,L)$ and $δ(X,Δ,L)$, independently of whether the base field is countable. This also yields an alternative proof of the existence of valuations computing $α(X,Δ,L)$ and $δ(X,Δ,L)$ that was originally proved by Blum-Jonsson over an uncountable field.",
+    "published": "2026-04-20T16:19:16+00:00",
+    "categories": [
+      "math.AG"
+    ],
+    "primary_category": "math.AG",
+    "pdf_url": "https://arxiv.org/pdf/2604.18465v1",
+    "comment": "Any comment is welcome"
+  },
+  {
+    "arxiv_id": "2604.18460v1",
+    "title": "Learning Invariant Modality Representation for Robust Multimodal Learning from a Causal Inference Perspective",
+    "authors": [
+      "Sijie Mai",
+      "Shiqin Han"
+    ],
+    "abstract": "Multimodal affective computing aims to predict humans' sentiment, emotion, intention, and opinion using language, acoustic, and visual modalities. However, current models often learn spurious correlations that harm generalization under distribution shifts or noisy modalities. To address this, we propose a causal modality-invariant representation (CmIR) learning framework for robust multimodal learning. At its core, we introduce a theoretically grounded disentanglement method that separates each modality into `causal invariant representation' and `environment-specific spurious representation' from a causal inference perspective. CmIR ensures that the learned invariant representations retain stable predictive relationships with labels across different environments while preserving sufficient information from the raw inputs via invariance constraint, mutual information constraint, and reconstruction constraint. Experiments across multiple multimodal benchmarks demonstrate that CmIR achieves state-of-the-art performance. CmIR particularly excels on out-of-distribution data and noisy data, confirming its robustness and generalizability.",
+    "published": "2026-04-20T16:16:36+00:00",
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "https://arxiv.org/pdf/2604.18460v1",
+    "comment": "Accepted by ACL 2026 Main"
+  },
+  {
+    "arxiv_id": "2604.18459v1",
+    "title": "Progressive Online Video Understanding with Evidence-Aligned Timing and Transparent Decisions",
+    "authors": [
+      "Kecheng Zhang",
+      "Zongxin Yang",
+      "Mingfei Han",
+      "Haihong Hao",
+      "Yunzhi Zhuge",
+      "Changlin Li",
+      "Junhan Zhao",
+      "Zhihui Li",
+      "Xiaojun Chang"
+    ],
+    "abstract": "Visual agents operating in the wild must respond to queries precisely when sufficient evidence first appears in a video stream, a critical capability that is overlooked by conventional video LLMs evaluated in offline settings. The shift to an online, streaming paradigm introduces significant challenges: a lack of decision transparency, the difficulty of aligning response timing with visual evidence, and the need to maintain a global, causally consistent understanding under tight computational budgets. To address these issues, we propose a novel framework that decouples reasoning control from memory integration. We introduce \\textbf{\\model{}}, an instantiation of this framework with two core components. First, the \\emph{Active Thinking Decision Maker (ATDM)} is a transparent reasoning controller that externalizes its decision process using observable progress ($\\boldsymbolρ$) and confidence ($\\boldsymbol{c}$) metrics. This allows it to precisely time its response $t_r$ to match the first-sufficient-evidence timestamp $t^\\star$ while streaming its reasoning to the user. Second, the \\emph{Hierarchical Progressive Semantic Integration (HPSI)} module acts as an efficient memory system. It employs a set of learnable, multi-level aggregation tokens that are propagated across clips to build a rich, global cognitive state without exceeding token budgets. %Our approach sets a new standard on key online video understanding benchmarks, achieving strong performance of \\textbf{71.6\\%} on StreamingBench and \\textbf{46.9\\%} on OVOBench, demonstrating a robust solution for evidence-aligned and transparent online video analysis. Extensive experiments demonstrate the effectiveness of ATDM and HPSI, e.g., Thinking-QwenVL improves the accuracy of the previous state-of-the-art from 67.63\\% to 71.60\\% on the StreamingBench benchmark.",
+    "published": "2026-04-20T16:15:33+00:00",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV",
+    "pdf_url": "https://arxiv.org/pdf/2604.18459v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18457v1",
+    "title": "Random-State Generation and Preparation Complexity in Rydberg Atom Arrays",
+    "authors": [
+      "Edison S. Carrera",
+      "Grégoire Misguich"
+    ],
+    "abstract": "Rydberg atom arrays are powerful platforms for studying quantum many-body systems. We consider the Rydberg-Ising Hamiltonian on periodic chains and numerically study ensembles of states generated by random global pulse sequences subject to hardware constraints and fixed evolution times. We compare the statistical properties of such states with those of Haar-random states within the relevant lattice symmetry sector. In the strong-interaction regime (short interatomic distance), the dynamics is governed by an effective blockade that restricts Hilbert-space exploration and limits entanglement growth. In this regime, level-spacing statistics of reduced density matrices are close to random-matrix predictions, while the distribution of measurement probabilities deviates from Porter-Thomas behavior. For weaker interactions (larger interatomic distance), the system approaches Haar-like statistics at long times, as reflected in entanglement entropy, entanglement spectrum statistics, and the distribution of measurement probabilities. At intermediate interactions, this behavior is observed on experimentally relevant timescales. Motivated by this observation, we investigate whether generic symmetric quantum states can be efficiently prepared using quantum optimal control in this regime. Employing target states drawn from an ensemble with a broad entropy distribution, we observe high fidelities (infidelities between $10^{-5}$ and $3\\times 10^{-2}$ for 9 spins). The fidelity, however, decreases with the entanglement entropy of the target state, demonstrating that highly entangled states are intrinsically harder to prepare under realistic constraints.",
+    "published": "2026-04-20T16:13:14+00:00",
+    "categories": [
+      "quant-ph",
+      "cond-mat.str-el"
+    ],
+    "primary_category": "quant-ph",
+    "pdf_url": "https://arxiv.org/pdf/2604.18457v1",
+    "comment": "14 pages, 9 figures"
+  },
+  {
+    "arxiv_id": "2604.18456v1",
+    "title": "Disorder-induced non-Gaussian states in large ensembles of cavity-coupled molecules",
+    "authors": [
+      "R. Schwengelbeck",
+      "M. Pandini",
+      "R. Daraban",
+      "J. Schachenmayer"
+    ],
+    "abstract": "We analyze vibrational dynamics in a toy model for polaritonic chemistry under collective electronic strong coupling. In a Holstein-Tavis-Cummings model, incoherently excited by a photon, we show that disorder leads to non-Gaussian states of vibrational modes on short time scales at the single-molecule level. Using exact matrix product state simulations, we demonstrate that this effect can remain robust for larger molecule numbers, implying that nuclear wave packets cannot be effectively described by thermal states. Furthermore, we compare simulations of the exact quantum dynamics with semiclassical approximations. We find that the Ehrenfest approximation can only well reproduce ensemble-averaged observables for very large system sizes. Also simulations in the truncated Wigner approximation fail to capture the non-Gaussian effects. Our work highlights the importance of disorder and genuine quantum effects in cavity-modified nuclear dynamics in polaritonic chemistry.",
+    "published": "2026-04-20T16:12:32+00:00",
+    "categories": [
+      "quant-ph",
+      "physics.chem-ph"
+    ],
+    "primary_category": "quant-ph",
+    "pdf_url": "https://arxiv.org/pdf/2604.18456v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18453v1",
+    "title": "On the Effect of Quadratic Regularization in Direct Data-Driven LQR",
+    "authors": [
+      "Manuel Klädtke",
+      "Feiran Zhao",
+      "Florian Dörfler",
+      "Moritz Schulze Darup"
+    ],
+    "abstract": "This paper proposes an explainability concept for direct data-driven linear quadratic regulation (LQR) with quadratic regularization. Our perspective follows the parametric effect of regularization, an analysis approach that translates regularization costs from auxiliary variables to system quantities, enabling intuitive interpretations. The framework further enables the elimination of auxiliary variables, thereby reducing computational complexity. We demonstrate the effectiveness of our approach and the identified effect of regularization via simulations.",
+    "published": "2026-04-20T16:10:42+00:00",
+    "categories": [
+      "eess.SY",
+      "math.OC"
+    ],
+    "primary_category": "eess.SY",
+    "pdf_url": "https://arxiv.org/pdf/2604.18453v1",
+    "comment": "This paper is a preprint of a contribution to the 23rd IFAC World Congress 2026. 7 pages, 3 figures"
+  },
+  {
+    "arxiv_id": "2604.18446v1",
+    "title": "Recurrence analysis of quantum many-body dynamics",
+    "authors": [
+      "Tomasz Szołdra",
+      "Matheus S. Palmero",
+      "Peter Schmelcher"
+    ],
+    "abstract": "Observables of out-of-equilibrium quantum many-body systems display complex temporal behavior that encodes the underlying physical mechanisms but typically resists straightforward interpretations. We introduce recurrence analysis - a nonlinear time-series analysis framework long established for classical dynamical systems - to investigate correlated quantum many-body dynamics. Recurrence plots provide a qualitative fingerprint of simulated or experimental data, while recurrence quantification analysis extracts corresponding numerical descriptors. Applying this framework to quenches from the paramagnetic ground state in the one-dimensional transverse-field Ising model, we observe a clear progression in the recurrence plots of two-site correlations: nearly periodic patterns in the deeply ferromagnetic phase give way to multiscale temporal structures at criticality. Recurrence quantifiers further recover the critical field strength without prior knowledge of the model, establishing recurrence analysis as a versatile tool for characterizing quantum many-body dynamics, including unsupervised detection of quantum phase transitions.",
+    "published": "2026-04-20T16:02:30+00:00",
+    "categories": [
+      "quant-ph"
+    ],
+    "primary_category": "quant-ph",
+    "pdf_url": "https://arxiv.org/pdf/2604.18446v1",
+    "comment": "5+5 pages, 3+4 figures, Comments welcome!"
+  },
+  {
+    "arxiv_id": "2604.18439v1",
+    "title": "Classical counterparts of shortcuts to adiabaticity in nonlinear dissipative Lagrangian systems",
+    "authors": [
+      "Jincheng Shi",
+      "Yicheng Pan",
+      "Yue Ban",
+      "Xi Chen"
+    ],
+    "abstract": "Shortcuts to adiabaticity (STA) were first developed in quantum dynamics to realize rapid transformations with suppressed residual excitations. Here we show how the same idea can be implemented in classical nonlinear dissipative Lagrangian systems. Using a coupled $r$-$θ$ manipulator as an illustrative model, we perform inverse engineering on the Euler-Lagrange equations with Rayleigh dissipation by prescribing endpoint-stationary trajectories, obtaining the corresponding force and torque profiles and quantifying how geometric coupling amplifies errors and residual energy. We further compare smooth STA protocols with actuator-bounded time-optimal solutions and with proportional-integral-derivative tracking, which highlights a trade-off among smoothness, speed, and robustness. Finally, we introduce a single-shot correction based on one mid-course measurement to reduce the effect of early deviations while keeping the inputs nearly smooth. These results provide a practical bridge between quantum STA concepts and their classical counterparts.",
+    "published": "2026-04-20T15:56:51+00:00",
+    "categories": [
+      "quant-ph",
+      "physics.class-ph"
+    ],
+    "primary_category": "quant-ph",
+    "pdf_url": "https://arxiv.org/pdf/2604.18439v1",
+    "comment": "10 pages, 7 figures"
+  },
+  {
+    "arxiv_id": "2604.18437v1",
+    "title": "Tell me Mr. AI, what do you see in this image?",
+    "authors": [
+      "Tommaso Giacometti",
+      "Paola Surcinelli",
+      "Mariachiara Stellato",
+      "Nico Curti"
+    ],
+    "abstract": "Background: The Rorschach inkblots are ambiguous stimuli developed to evoke subjective interpretations in humans, while modern artificial intelligence (AI) models are trained to recognize well established patterns and classes. The comparison of these two opposite systems arises a simple and provocative question: what happens when we ask an AI model to interpret an inkblot that \"is not supposed to represent anything predefined\"? Methods: We submitted the complete set of ten Rorschach inkblots to 61 AI models pretrained on the ImageNet dataset, spanning multiple architectural families. Model predictions were analyzed at the level of top-ranked classes and were quantified using a selected set of psycho-semantic variables inspired by the Rorschach tradition. Statistical analyses examined the effects of model family, computational complexity, and image conditions, comparing model-generated responses with human reference profiles. Findings: Across all architectures, model responses were highly non-random and showed systematic semantic convergence and inter-model agreement. However, quantitative analyses revealed a clear and robust separation between human responses and all AI model families. Human profiles exhibited substantially higher affective load, semantic richness, projected agency, and variability, whereas AI models converged toward frequent, formally coherent, and perceptually stable interpretations. Interpretation: Vision models consistently project the semantic organization learned, favoring consensus and formal coherence over affective or symbolic elaboration. Applying the Rorschach test to AI systems does not assess human-like cognition but provides a principled framework for exposing perceptual and semantic biases embedded in contemporary computer vision models.",
+    "published": "2026-04-20T15:55:26+00:00",
+    "categories": [
+      "physics.soc-ph"
+    ],
+    "primary_category": "physics.soc-ph",
+    "pdf_url": "https://arxiv.org/pdf/2604.18437v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18427v1",
+    "title": "Expected perimeter of the convex hull of planar Brownian motion stopped upon exiting the unit disk",
+    "authors": [
+      "Hugo Panzo",
+      "Stjepan Šebek"
+    ],
+    "abstract": "We study the convex hull of planar Brownian motion run until the exit time from the unit disk. Our primary objective is to compute the expected perimeter of this convex hull, thereby complementing recent results on the convex hull of reflecting Brownian motion in confined geometries. We reduce the problem to computing the expected value of the Brownian motion's maximum horizontal displacement at the exit time, and then recast this maximum in terms of harmonic measure in a domain we call the truncated disk. In particular, we obtain an exact expression for the expected perimeter. We also obtain nontrivial bounds on the expected area of this convex hull and comment on why computing the exact expected area is a much harder problem.",
+    "published": "2026-04-20T15:46:35+00:00",
+    "categories": [
+      "math.PR",
+      "cond-mat.stat-mech",
+      "math.MG"
+    ],
+    "primary_category": "math.PR",
+    "pdf_url": "https://arxiv.org/pdf/2604.18427v1",
+    "comment": "13 pages, 3 figures"
+  },
+  {
+    "arxiv_id": "2604.18426v1",
+    "title": "High precision micro-optical elements on fiber facets via focused-ion beam machining",
+    "authors": [
+      "Raman Kumar",
+      "Sebastian Will"
+    ],
+    "abstract": "Fiber-integrated micro-optical elements promise a scalable approach to photon collection and beam shaping for quantum information processing. Here, we demonstrate single-step fabrication of micro-spherical, micro-spiral, and micro-axicon structures directly on the core of single-mode optical fibers using focused ion beam (FIB) machining with nanometer-scale precision. Atomic force microscopy reveals that micro-concave and micro-convex spherical surfaces achieve shape accuracies of approximately $λ/80$ and $λ/50$ at $λ= 780$ nm, respectively. Optical characterization using a He-Ne laser at 633 nm confirms the expected far-field donut beam patterns for the micro-spiral and micro-axicon structures. Mach-Zehnder interferometry further verifies the corresponding azimuthal and radial phase profiles of the light emitted from the spiral and axicon fibers. Surface metrology shows that the optimized FIB process preserves optical-grade surface quality, introducing no measurable additional roughness at spatial scales relevant to visible and near-infrared operation. These monolithically integrated fiber micro-optical elements enable a broad range of applications in quantum technology, including fiber micro-cavities for cavity quantum electrodynamics, beam shaping for neutral atom trapping, and the generation of structured light for free-space quantum network links.",
+    "published": "2026-04-20T15:45:04+00:00",
+    "categories": [
+      "physics.optics",
+      "physics.app-ph",
+      "physics.atom-ph",
+      "quant-ph"
+    ],
+    "primary_category": "physics.optics",
+    "pdf_url": "https://arxiv.org/pdf/2604.18426v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18425v1",
+    "title": "Quantum quenches in a spin-1 chain with tunable symmetry",
+    "authors": [
+      "Luis Eduardo Ramos-Solís",
+      "Sayan Choudhury",
+      "Freddy Jackson Poveda-Cuevas",
+      "Eduardo Ibarra-García-Padilla"
+    ],
+    "abstract": "In recent years, the dynamics of interacting quantum systems far from equilibrium have attracted significant research interest. Driven by rapid progress in quantum simulators, various non-equilibrium phenomena have now been realized experimentally. In this work, we use the time-evolving block decimation (TEBD) method to investigate the dynamics of an anisotropic spin-1 Heisenberg chain for a wide range of experimentally accessible initial states. By adjusting the parameter $J_q$ that controls the quadrupolar interaction strength, we can tune the system from a non-integrable SU(2) Heisenberg model to an integrable SU(3) Heisenberg model. We examine the local magnetization, entanglement entropy, and spin correlations, and characterize their dependence on $J_q$. We identify a new conserved quantity at the SU(3) symmetric point and provide a theoretical framework to explain our numerical observations in terms of the number of accessible states permitted by this conservation law. Our results provide a route to realize a rich array of non-equilibrium behavior in spin-1 lattice models, which can be engineered in several experimental platforms such as ultracold atoms in optical lattices.",
+    "published": "2026-04-20T15:43:01+00:00",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.str-el"
+    ],
+    "primary_category": "cond-mat.quant-gas",
+    "pdf_url": "https://arxiv.org/pdf/2604.18425v1",
+    "comment": "23 pages, 17 figures"
+  },
+  {
+    "arxiv_id": "2604.18424v1",
+    "title": "Context-Aware Search and Retrieval Under Token Erasure",
+    "authors": [
+      "Sara Ghasvarianjahromi",
+      "Joshua Barr",
+      "Yauhen Yakimenka",
+      "Jörg Kliewer"
+    ],
+    "abstract": "This paper introduces and analyzes a search and retrieval model for RAG-like systems under {token} erasures. We provide an information-theoretic analysis of remote document retrieval when query representations are only partially preserved. The query is represented using term-frequency-based features, and semantically adaptive redundancy is assigned according to feature importance. Retrieval is performed using TF-IDF-weighted similarity. We characterize the retrieval error probability by showing that the vector of similarity margins converges to a multivariate Gaussian distribution, yielding an explicit approximation and computable upper bounds. Numerical results support the analysis, while a separate data-driven evaluation using embedding-based retrieval on real-world data shows that the same importance-aware redundancy principles extend to modern retrieval pipelines. Overall, the results show that assigning higher redundancy to semantically important query features improves retrieval reliability.",
+    "published": "2026-04-20T15:42:12+00:00",
+    "categories": [
+      "cs.IR",
+      "cs.IT"
+    ],
+    "primary_category": "cs.IR",
+    "pdf_url": "https://arxiv.org/pdf/2604.18424v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18422v1",
+    "title": "Security Risks of VOA-Induced Luminescence in Chip-Based quantum key distribution",
+    "authors": [
+      "Zijian Li",
+      "Chenyu Xu",
+      "Xin Hua",
+      "Yongqiang Du",
+      "Xin Liu",
+      "Tao Lin",
+      "Xi Xiao",
+      "Kejin Wei"
+    ],
+    "abstract": "Integrated photonics is widely regarded as a key enabler for scalable quantum key distribution (QKD), offering compactness, stability, and compatibility with semiconductor fabrication. Despite rapid advances in chip-based QKD, the implementation security of integrated photonic components remains insufficiently understood. Here we present the first systematic study of an implementation-level security vulnerability associated with p-n junction-based variable optical attenuators (VOAs), a ubiquitous component in integrated QKD transmitters. We theoretically and experimentally demonstrate that electrically biased p-n junction VOAs emit spontaneous luminescence. Using a single-photon-sensitive spectral measurement technique, we identify the emission wavelength to be centered around 1107 nm, well separated from the C-band quantum signals. This spectral separation gives rise to a previously unrecognized wavelength-resolved side channel, enabling potential wavelength-splitting attacks without directly disturbing the encoded quantum states. By incorporating the measured luminescence into a quantitative security analysis, we show that even extremely weak emission can lead to non-negligible information leakage. Our findings reveal a fundamental and previously overlooked security risk in photonic integrated QKD systems and highlight the necessity of security-aware device design for future integrated quantum communication technologies.",
+    "published": "2026-04-20T15:40:45+00:00",
+    "categories": [
+      "quant-ph",
+      "physics.optics"
+    ],
+    "primary_category": "quant-ph",
+    "pdf_url": "https://arxiv.org/pdf/2604.18422v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18419v1",
+    "title": "Knowing When to Quit: A Principled Framework for Dynamic Abstention in LLM Reasoning",
+    "authors": [
+      "Hen Davidov",
+      "Nachshon Cohen",
+      "Oren Kalinsky",
+      "Yaron Fairstein",
+      "Guy Kushilevitz",
+      "Ram Yazdi",
+      "Patrick Rebeschini"
+    ],
+    "abstract": "Large language models (LLMs) using chain-of-thought reasoning often waste substantial compute by producing long, incorrect responses. Abstention can mitigate this by withholding outputs unlikely to be correct. While most abstention methods decide to withhold outputs before or after generation, dynamic mid-generation abstention considers early termination of unpromising reasoning traces at each token position. Prior work has explored empirical variants of this idea, but principled guidance for the abstention rule remains lacking. We present a formal analysis of dynamic abstention for LLMs, modeling abstention as an explicit action within a regularized reinforcement learning framework. An abstention reward parameter controls the trade-off between compute and information. We show that abstaining when the value function falls below this reward strictly outperforms natural baselines under general conditions. We further derive a principled and efficient method to approximate the value function. Empirical results on mathematical reasoning and toxicity avoidance tasks support our theory and demonstrate improved selective accuracy over existing methods.",
+    "published": "2026-04-20T15:38:45+00:00",
+    "categories": [
+      "cs.LG",
+      "cs.CL",
+      "stat.ML"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "https://arxiv.org/pdf/2604.18419v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18416v1",
+    "title": "Classical and quantum evolution of inflationary fluctuations",
+    "authors": [
+      "Guillermo Ballesteros",
+      "Jesús Gambín Egea",
+      "Alejandro Pérez Rodríguez"
+    ],
+    "abstract": "We compare the correlation functions of inflationary perturbations computed either with quantum or classical dynamics. Even if they are enforced to agree at a specific time during inflation, classical and quantum correlations will differ at the end of inflation, provided that interactions are relevant. The difference between the results of the classical and quantum computations is exponentially sensitive to the number of e-folds elapsed from the time of agreement. We illustrate this finding with the tree-level bispectrum of the primordial curvature fluctuation and the one-loop power spectrum of tensor modes. We also show that classical evolution from a finite time does not imply the appearance of poles in the scalar bispectrum.",
+    "published": "2026-04-20T15:36:46+00:00",
+    "categories": [
+      "hep-th",
+      "astro-ph.CO",
+      "gr-qc",
+      "hep-ph"
+    ],
+    "primary_category": "hep-th",
+    "pdf_url": "https://arxiv.org/pdf/2604.18416v1",
+    "comment": ""
+  },
+  {
+    "arxiv_id": "2604.18410v1",
+    "title": "Crossed product C*-algebras associated with non-minimal actions on the circle",
+    "authors": [
+      "Jamie Bell"
+    ],
+    "abstract": "We examine crossed product C*-algebras associated with non-minimal free actions of countably infinite discrete abelian groups on the circle, extending the work of Putnam, Schmidt, and Skau. We obtain a large class of unital separable nuclear and non-simple C*-algebras that are quasidiagonal, have stable rank one, and admit a unique tracial state. We determine their ideal structure and establish an improved uniform upper bound for their nuclear dimension. Finally, in the case $G = \\mathbb{Z}^d$, we compute the ordered K-theory and its trace pairing.",
+    "published": "2026-04-20T15:28:42+00:00",
+    "categories": [
+      "math.OA",
+      "math.DS"
+    ],
+    "primary_category": "math.OA",
+    "pdf_url": "https://arxiv.org/pdf/2604.18410v1",
+    "comment": "18 pages"
+  },
+  {
+    "arxiv_id": "2604.18407v1",
+    "title": "The Rise of Quantum Computing -- Take a BITE for Built Environment and Urban Microclimate Research",
+    "authors": [
+      "Liangzhu Leon Wang",
+      "Huiheng Liu",
+      "Honghao Fu",
+      "Zhipeng Deng",
+      "Bing Dong",
+      "Naiping Gao"
+    ],
+    "abstract": "Quantum computing is a new approach to computation that utilizes superposition, entanglement, interference, and tunneling to solve problems too complex for classical computers. This paper discusses the basic concepts and development of quantum computing, exploring its potential applications in the built environment and urban microclimate research. In buildings, quantum computing may help optimize energy management, control HVAC systems, and plan electric vehicle charging networks more efficiently. For urban microclimates, it could accelerate renewable energy planning and support multi-objective design, making it easier to balance urban building performance with climate conditions. Since current quantum hardware is still in the Noisy Intermediate-Scale Quantum (NISQ) stage, we propose the \"BITE\" principle to guide researchers in choosing suitable problems for quantum acceleration: B (Big search), I (Input-light), T (Tiny computation), and E (Evaluation polish). Although quantum computing still faces challenges such as noise and hardware limits, it offers great potential for developing more climate-resilient, sustainable, and energy-efficient cities of the future.",
+    "published": "2026-04-20T15:25:03+00:00",
+    "categories": [
+      "physics.pop-ph",
+      "quant-ph"
+    ],
+    "primary_category": "physics.pop-ph",
+    "pdf_url": "https://arxiv.org/pdf/2604.18407v1",
+    "comment": "16 pages, 3 figures"
+  },
+  {
+    "arxiv_id": "2604.18405v1",
+    "title": "Large-c BCFT Entanglement Entropy with Deformed Boundaries from Emergent JT Gravity",
+    "authors": [
+      "Dominik Neuenfeld",
+      "Christopher Tellinger"
+    ],
+    "abstract": "We study the effect of boundary deformations on the von Neumann entropy of subregions in two-dimensional boundary conformal field theories (BCFTs) at zero and finite temperature. The deformations considered are infinitesimal global conformal transformations that move the boundary and can equivalently be viewed as the leading-order effect of certain BCFT perturbations with the boundary displacement operator. We demonstrate that at large central charge the von Neumann entropy in the presence of a deformed boundary is reproduced by the island entropy of the same interval in an undeformed BCFT acting as a bath and coupled to a gravitating spacetime. Here, the BCFT is joined to an AdS$_2$ region governed by Jackiw-Teitelboim (JT) gravity via transparent boundary conditions. The boundary condition for the dilaton field is set by the boundary deformation in the BCFT computation. Our analysis relies on mild assumptions about the spectrum and OPE coefficients of the BCFT. Notably, these conditions are consistent with an exponentially large number of light operators and are therefore weaker than those required for holographic BCFTs. This is possible since the BCFT result is not reproduced by a gravitational computation in three dimensions with an O(1) number of matter fields, but instead by a computation in two dimensions and with an O(c) number of light fields.",
+    "published": "2026-04-20T15:23:14+00:00",
+    "categories": [
+      "hep-th"
+    ],
+    "primary_category": "hep-th",
+    "pdf_url": "https://arxiv.org/pdf/2604.18405v1",
+    "comment": "39 pages, 8 figures"
+  },
+  {
+    "arxiv_id": "2604.18404v1",
+    "title": "Six Llamas: Comparative Religious Ethics Through LoRA-Adapted Language Models",
+    "authors": [
+      "Chad Coleman",
+      "W. Russell Neuman",
+      "Manan Shah",
+      "Ali Dasdan",
+      "Matthew Crispi",
+      "Morris Chiang",
+      "Zack Leitman",
+      "Mustafa Poonawala"
+    ],
+    "abstract": "We present Six Llamas, a comparative study examining whether large language models fine-tuned on distinct religious corpora encode systematically different patterns of ethical reasoning. Six variants of Meta-Llama-3.1-8B are constructed: one unmodified control and five LoRA-adapted models trained exclusively on the sacred and theological texts of Christianity, Islam, Judaism, Hinduism, or Buddhism. All six models are probed with an identical battery of 17 standardized ethical prompts spanning moral dilemmas, game-theoretic scenarios, public policy questions, and moral-psychological self-assessments. To assess robustness and reproducibility, we implement a multi-temperature sampling design spanning ten temperature settings. We compute response consistency metrics, pairwise inter-model agreement rates, temperature sensitivity coefficients across four prompt domains, and run-to-run stability analyses.\n  Findings show that LoRA-adapted models produce ethical reasoning patterns that are (a) systematically differentiated from the base model, (b) consistent with the moral logics of their training traditions, (c) structured along interpretable dimensions in moral-philosophical space, (d) core ethical positions remain stable across temperature variations for high-consensus dilemmas. The Trolley Problem achieves 100% consistency across all models and temperatures, while (e) tradition-specific divergence intensifies at higher temperatures in morally contested domains, and (f) the base model exhibits the highest overall response consistency (mean 88.3%), suggesting LoRA adaptation introduces both tradition-specific signal and increased sampling sensitivity.\n  The study offers a proof-of-concept for the condensate comparative method using differentially trained language models as instruments for cultural and ethical analysis and identifies specific criteria for falsification and planned extensions.",
+    "published": "2026-04-20T15:22:59+00:00",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2604.18404v1",
+    "comment": "51 pages, 14 figures. We present Six Llamas, a comparative study examining whether Llama-3.1-8B models fine-tuned on distinct religious corpora encode systematically different patterns of ethical reasoning. Five LoRA-adapted variants are constructed for Christianity, Islam, Judaism, Hinduism, and Buddhism. For theoretical background on the condensate comparative method, see arXiv:2603.07329"
+  }
+]
